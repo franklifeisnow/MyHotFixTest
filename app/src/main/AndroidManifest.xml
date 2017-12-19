@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="lee.frank.myhotfixtest">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 外部存储读权限，调试工具加载本地补丁需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24730254-1"/>
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="a50a229a38285e9b3f60c2a60b75e708"/>
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC12dbKfulLdQ3LLlw5OCTWhPBWWnEqw3DjdHyUenonqSY9GX3iiS+eWexKzS/pPdpsJDfWHiyRQOAtZCkY3cP0iUHVDBjDG2MsgHIHv3ajyVRPOH40KGd8eYG2bUehfnjlnPF2b4ld7qystvf2LZeWor7iA4q2Kzl9TFjqd4gAJfjvfutxxuWzPbGPDRgCS3NnMVPPfOoU4+EPnKn4k+SYioJTYsymlCwe3zWSv7kUoqwWv9wgFrcfKzWNU7fyZ3VbMYlyooPjYHZ4ZOmRwlGnXn3sIjRd5xfX90DX9J4wwwq2QXU2EXIKLqEVBqpMHILWdRz9YTGLlHCOgTTtJ31DAgMBAAECggEBAIiIfqjYcmZyAyI6s4lOavIZK61aCD94L6jGy8Za0p42dHxJSGeuYm88ypk6xy8SfozVAIslaobAM9BAtE50KmzOJPxFMc5DIMnHwlWo3fWI8mDsZGzarSAaxlXmZHKO10xl8jDe+z7oNQMT+MX/YyH5HOHqkNnHSEmX6eZYSmb411Je/Rdt13T0p9zQ1qAcaYQm1JJjOpIx5teCncnuiZPfxUjGQEf+SpcPv59AV8x589VhdvNCUTEMSyu2n64G1hAYls81O0fD9/IPrxQOIxnko0T5Wsm7LIcUOl+kxWFvjg34e5qU02X3/qWwL2kTEqLn22AI0ZVa/T1//eez32kCgYEA4Ne0LeYIlTBJaKACHSKsJw23boTWKdQkis5rTQavyMgC0x0AcjWSzJBbNfxo9i2Fs0B8T60L7golooNc48YJrdiGVSWMv981lCMz3qyRve7EQKlhnClomec+EsOZAQqeMx3mONEID9zkalIILPzW0Ow3KTYkahn6ZCG7TRgsuB8CgYEAzw0BTd4DsYMdbHyZouf48W8ncxXi6l3j/sDMMc5mzbmJkSX010OOfSiKXOs+CaknvXOLvBTtvdT5RiSDxhNj/Fgsu1a/C03TjX3noaPs+NdQxqgCelX1TiGVWghlY8BhBP8ffB9cC2La51VXpeZjVh5G7kI9O9Po0I37GJvsJl0CgYATTFBJtDm+XFOgqEMmLwipnXLGCJ69Hlk4lLj+9nj1+bzMU+vq4ZBFAIrjmlOD9apJFVrWF9szRimuximd3yyLgE8fVca73TOjEFZuYU9tBuZPSnp3RdKVixR31dP3E+s6JfHRpJdVjTcJrRrIibcCXZPqdJwxgyNLnt2No2qLLwKBgDXlyMUgWg3Hd81Z0hSaFi+jI73NoLgpoMQcJAuDEzfSaIEkREwVBe6Gsx3lDs0s/29NuL5JJGoaGpmrv7G8Mnbp7RsHRcwHgl5+u+FT7sgIJLrR2XNHFQg1rc82CE6jMZ4/W07QSwGbxigaCyrgglNUplo3XAFK9Hv1ubt6O0rxAoGBAKXm0hB8yf/myObYVAdUKD+Y6QZnAagBjoXefMnBo99IbIUsPWdxHCAdzYXCws5xfJw8VilGBt9f6aLIsEfyinTqO/9BozfDrbGns+qL3ip0ASsFOrU8CjUbKGaEWiHlcQhGP5HZDqt4IbCe1MffK+kYOekHBwnove1ozJGv/xTr"/>
+
+        <activity android:name=".mvp.View.UserActivity">
+        </activity>
+    </application>
+
+</manifest>
